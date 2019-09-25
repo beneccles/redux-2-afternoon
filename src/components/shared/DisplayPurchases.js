@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 class DisplayPurchases extends Component {
   render() {
     let { purchases } = this.props;
+    console.log(purchases)
     if (!purchases) purchases = [{ id: 1000, description: 'Ship', price: 1, category: 'Other' }]
     return (
       <div className='display-purchases'>
